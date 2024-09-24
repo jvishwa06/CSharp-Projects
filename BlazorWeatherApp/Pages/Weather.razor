@@ -1,0 +1,29 @@
+﻿@page "/weather"
+@inject BlazorWeatherApp.Services.WeatherService WeatherService
+@using BlazorWeatherApp.Services
+
+<h3>Weather Forecast</h3>
+
+<input type="text" @bind="city" placeholder="Enter city name" />
+<button @onclick="GetWeather">Get Weather</button>
+
+@if (weatherData != null)
+{
+    <p>Temperature: @weatherData.main.temp °C</p>
+    <p>Feels Like: @weatherData.main.feels_like °C</p>
+    <p>Humidity: @weatherData.main.humidity %</p>
+    <p>City: @weatherData.name</p>
+}
+
+@code {
+    private WeatherData weatherData;
+    private string city;
+
+    private async Task GetWeather()
+    {
+        if (!string.IsNullOrEmpty(city))
+        {
+            weatherData = await WeatherService.GetWeatherAsync(city);
+        }
+    }
+}
