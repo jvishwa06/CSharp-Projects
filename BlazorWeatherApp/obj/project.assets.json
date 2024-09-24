@@ -428,7 +428,7 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0-rc.1.24431.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -920,7 +920,7 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
+      "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0-rc.1.24431.7": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -1842,10 +1842,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
-      "sha512": "z2UxqxjssvxlcQ68KZorgQDITdV2u5H6CWOGhs3kiv+qqDtokhDpcK660TUMrX+FTDdRKie0l7EeZEdej26Ycw==",
+    "Microsoft.NET.Sdk.WebAssembly.Pack/9.0.0-rc.1.24431.7": {
+      "sha512": "DFJcW6b/ZCG1IREFqI2Fk1c5Ko7E/iw/4nTQkqmFZ9YdedKwjMNI+1KBJg0q2IdjlyMZUQwreU3ymE2tdxPQbA==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/8.0.8",
+      "path": "microsoft.net.sdk.webassembly.pack/9.0.0-rc.1.24431.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1856,6 +1856,7 @@
         "WasmAppHost/BrowserDebugHost.deps.json",
         "WasmAppHost/BrowserDebugHost.dll",
         "WasmAppHost/BrowserDebugHost.runtimeconfig.json",
+        "WasmAppHost/BrowserDebugHost.staticwebassets.endpoints.json",
         "WasmAppHost/BrowserDebugProxy.dll",
         "WasmAppHost/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
         "WasmAppHost/Microsoft.CodeAnalysis.CSharp.dll",
@@ -1868,12 +1869,14 @@
         "WasmAppHost/WasmAppHost.deps.json",
         "WasmAppHost/WasmAppHost.dll",
         "WasmAppHost/WasmAppHost.runtimeconfig.json",
+        "WasmAppHost/WasmAppHost.staticwebassets.endpoints.json",
         "build/Microsoft.NET.Sdk.WebAssembly.Browser.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Browser.targets",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
-        "microsoft.net.sdk.webassembly.pack.8.0.8.nupkg.sha512",
+        "build/browser.runtimeconfig.template.json",
+        "microsoft.net.sdk.webassembly.pack.9.0.0-rc.1.24431.7.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/net472/Microsoft.Build.dll",
@@ -1898,18 +1901,18 @@
         "tools/net472/System.Threading.Tasks.Dataflow.dll",
         "tools/net472/System.Threading.Tasks.Extensions.dll",
         "tools/net472/System.ValueTuple.dll",
-        "tools/net8.0/Microsoft.Build.dll",
-        "tools/net8.0/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
-        "tools/net8.0/Microsoft.NET.StringTools.dll",
-        "tools/net8.0/Microsoft.NET.WebAssembly.Webcil.dll",
-        "tools/net8.0/Microsoft.Win32.SystemEvents.dll",
-        "tools/net8.0/System.Configuration.ConfigurationManager.dll",
-        "tools/net8.0/System.Diagnostics.EventLog.dll",
-        "tools/net8.0/System.Drawing.Common.dll",
-        "tools/net8.0/System.Reflection.MetadataLoadContext.dll",
-        "tools/net8.0/System.Security.Cryptography.ProtectedData.dll",
-        "tools/net8.0/System.Security.Permissions.dll",
-        "tools/net8.0/System.Windows.Extensions.dll"
+        "tools/net9.0/Microsoft.Build.dll",
+        "tools/net9.0/Microsoft.NET.Sdk.WebAssembly.Pack.Tasks.dll",
+        "tools/net9.0/Microsoft.NET.StringTools.dll",
+        "tools/net9.0/Microsoft.NET.WebAssembly.Webcil.dll",
+        "tools/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net9.0/System.Configuration.ConfigurationManager.dll",
+        "tools/net9.0/System.Diagnostics.EventLog.dll",
+        "tools/net9.0/System.Drawing.Common.dll",
+        "tools/net9.0/System.Reflection.MetadataLoadContext.dll",
+        "tools/net9.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net9.0/System.Security.Permissions.dll",
+        "tools/net9.0/System.Windows.Extensions.dll"
       ]
     },
     "System.IO.Pipelines/8.0.0": {
@@ -2055,11 +2058,12 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.8",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.8",
       "Microsoft.NET.ILLink.Tasks >= 8.0.8",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.8"
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.0-rc.1.24431.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jvish\\.nuget\\packages\\": {}
+    "C:\\Users\\jvish\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2070,13 +2074,19 @@
       "packagesPath": "C:\\Users\\jvish\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jvish\\Desktop\\WiseWork-Projects\\C# Projetcs\\BlazorWeatherApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jvish\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jvish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2093,8 +2103,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2118,7 +2129,7 @@
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.8, )",
+            "version": "[9.0.0-rc.1.24431.7, )",
             "autoReferenced": true
           }
         },
@@ -2144,7 +2155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -2152,5 +2163,18 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0",
+        "net8.0/browser-wasm"
+      ]
+    }
+  ]
 }
