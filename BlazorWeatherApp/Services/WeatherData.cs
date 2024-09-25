@@ -1,9 +1,9 @@
 namespace BlazorWeatherApp.Services
 {
-        public class WeatherData
+    public class WeatherData
     {
-        public Main? main { get; set; } // Nullable Main
-        public string? name { get; set; } // Nullable string
+        public Main? main { get; set; }
+        public string? name { get; set; }
 
         public class Main
         {
