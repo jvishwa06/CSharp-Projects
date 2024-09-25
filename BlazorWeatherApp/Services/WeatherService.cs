@@ -15,7 +15,7 @@ namespace BlazorWeatherApp.Services
             _httpClient = httpClient;
         }
 
-        public async Task<WeatherData> GetWeatherAsync(string city)
+        public async Task<WeatherData?> GetWeatherAsync(string city)
         {
             var response = await _httpClient.GetAsync($"{BaseUrl}?q={city}&appid={ApiKey}&units=metric");
             response.EnsureSuccessStatusCode();

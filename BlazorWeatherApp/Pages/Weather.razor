@@ -16,8 +16,8 @@
 }
 
 @code {
-    private WeatherData weatherData;
-    private string city;
+    private WeatherData? weatherData; // Nullable WeatherData
+    private string? city; // Nullable string
 
     private async Task GetWeather()
     {
