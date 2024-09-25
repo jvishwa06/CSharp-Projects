@@ -2063,8 +2063,8 @@ C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\
 C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\v2a66jv9eh-tptq2av103.gz
 C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\9065kp0ytm-lfu7j35m59.gz
 C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\kg2mh78qkd-oyz0vx2fzb.gz
-C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\bwivqy4ylh-u9z07opz6j.gz
-C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\lib4edp4t6-h4gwzurmbw.gz
-C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\2p3ppyfvwk-xmcybqo5bg.gz
 C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\staticwebassets\msbuild.BlazorWeatherApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\bwivqy4ylh-u939zbro7x.gz
+C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\lib4edp4t6-kc6di4dhy8.gz
+C:\Users\jvish\Desktop\WiseWork-Projects\C# Projetcs\BlazorWeatherApp\obj\Debug\net8.0\compressed\2p3ppyfvwk-xqb4a4g7go.gz

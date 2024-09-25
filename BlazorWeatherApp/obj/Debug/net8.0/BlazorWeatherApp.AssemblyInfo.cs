@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorWeatherApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b31c527b0bb3875b4eba6e89bb65fef3801de1ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a7087cbcaa67cb62cbbe8d7e2230f8838b6433b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorWeatherApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorWeatherApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
