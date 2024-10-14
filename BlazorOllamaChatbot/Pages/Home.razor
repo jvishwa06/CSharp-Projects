@@ -1,0 +1,64 @@
+﻿@page "/"
+@using MudBlazor
+
+<MudText Typo="Typo.body2">
+    Large Language Model</MudText>
+<MudText Typo="Typo.h2" Class="mud-typography mud-typography-h4 mud-text-bold"><strong>Introducing Jarvis V0 : Our most capable models to date</strong></MudText>
+
+<MudDivider />
+
+
+<MudPaper Class="pa-4">
+    @* <MudText Typo="Typo.h4" Bold="true">Introducing Jarvis V0</MudText> *@
+    <MudText Typo="Typo.body2">
+        Jarvis V0 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation. With the release of the 405B model, we’re poised to supercharge innovation—with unprecedented opportunities for growth and exploration. We believe the latest generation of Jarvis V0 will ignite new applications and modeling paradigms, including synthetic data generation to enable the improvement and training of smaller models, as well as model distillation—a capability that has never been achieved at this scale in open source.
+    </MudText>
+<MudDivider />
+    <MudText Typo="Typo.h4" Bold="true" Class="mt-4">Model Architecture</MudText>
+    <MudText Typo="Typo.body2">
+        As our largest model yet, training Jarvis V0  405B on over 15 trillion tokens was a major challenge. To enable training runs at this scale and achieve the results we have in a reasonable amount of time, we significantly optimized our full training stack and pushed our model training to over 16 thousand H100 GPUs, making the 405B the first Jarvis V0 model trained at this scale.
+    </MudText>
+
+    <MudText Typo="Typo.body2">
+        To address this, we made design choices that focus on keeping the model development process scalable and straightforward:
+        <ul>
+            <li>We opted for a standard decoder-only transformer model architecture with minor adaptations rather than a mixture-of-experts model to maximize training stability.</li>
+            <li>We adopted an iterative post-training procedure, where each round uses supervised fine-tuning and direct preference optimization. This enabled us to create the highest quality synthetic data for each round and improve each capability’s performance.</li>
+            <li>Compared to previous versions of Jarvis V0, we improved both the quantity and quality of the data we use for pre- and post-training.</li>
+        </ul>
+    </MudText>
+<MudDivider />
+
+    <MudText Typo="Typo.h4" Bold="true" Class="mt-4">Instruction and Chat Fine-Tuning</MudText>
+    <MudText Typo="Typo.body2">
+        With Jarvis V0 405B, we strove to improve the helpfulness, quality, and detailed instruction-following capability of the model in response to user instructions while ensuring high levels of safety. Our biggest challenges were supporting more capabilities, the 128K context window, and increased model sizes.
+    </MudText>
+    <MudText Typo="Typo.body2">
+        In post-training, we produce final chat models by doing several rounds of alignment on top of the pre-trained model. Each round involves Supervised Fine-Tuning (SFT), Rejection Sampling (RS), and Direct Preference Optimization (DPO). We use synthetic data generation to produce the vast majority of our SFT examples, iterating multiple times to produce higher and higher quality synthetic data across all capabilities.
+    </MudText>
+<MudDivider />
+    <MudText Typo="Typo.h4" Bold="true" Class="mt-4">The Jarvis V0 System</MudText>
+    <MudText Typo="Typo.body2">
+        Jarvis V0 models were always intended to work as part of an overall system that can orchestrate several components, including calling external tools. Our vision is to go beyond the foundation models to give developers access to a broader system that gives them the flexibility to design and create custom offerings that align with their vision.
+    </MudText>
+    <MudText Typo="Typo.body2">
+        As part of our ongoing efforts to develop AI responsibly beyond the model layer and helping others to do the same, we’re releasing a full reference system that includes several sample applications and includes new components such as Jarvis V0 Guard 3, a multilingual safety model, and Prompt Guard, a prompt injection filter.
+    </MudText>
+<MudDivider />
+
+    <MudText Typo="Typo.h4" Bold="true" Class="mt-4">Building with Jarvis V0 405B</MudText>
+    <MudText Typo="Typo.body2">
+        For the average developer, using a model at the scale of the 405B is challenging. While it’s an incredibly powerful model, we recognize that it requires significant compute resources and expertise to work with. We want to enable everyone to get the most out of the 405B, including:
+        <ul>
+            <li>Real-time and batch inference</li>
+            <li>Supervised fine-tuning</li>
+            <li>Evaluation of your model for your specific application</li>
+            <li>Continual pre-training</li>
+            <li>Retrieval-Augmented Generation (RAG)</li>
+            <li>Function calling</li>
+            <li>Synthetic data generation</li>
+        </ul>
+    </MudText>
+</MudPaper>
+<MudDivider />
+

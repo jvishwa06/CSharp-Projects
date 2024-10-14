@@ -1,13 +1,19 @@
-using BlazorWeatherApp;
-using BlazorWeatherApp.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using vishu;
+using MudBlazor.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");  // Ensure this line is present and correct
+builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddScoped<WeatherService>();  // Register the WeatherService
+// Register HttpClient with the Web API base address
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:5134/") });
+
+// Register WeatherService and MudBlazor services
+builder.Services.AddScoped<WeatherService>(); 
+builder.Services.AddMudServices();
+builder.Services.AddSingleton<AuthService>();
+
 
 await builder.Build().RunAsync();

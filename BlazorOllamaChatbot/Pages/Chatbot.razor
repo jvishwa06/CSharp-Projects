@@ -1,0 +1,38 @@
+@page "/chatbot"
+@using OllamaChatbot.Services
+
+<div style="display: flex; flex-direction: column; height: 90vh;">
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>JARVIS V0</h1>
+
+        <div style="width: 100%; max-width: 1200px; text-align: left;">
+            @if (!string.IsNullOrEmpty(response))
+            {
+                <div class="flipping-card">
+                    <p>@response</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div style="width: 100%; max-width: 1400px; position: relative; padding-bottom: 10px;">
+        <input @bind="userInput" style="width: 100%; height: 60px; padding-right: 60px; background-color: #333; color: white; border: none; border-radius: 5px; outline: none;" placeholder="   Message Jarvis V0" />
+        <button @onclick="SendMessage" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background-color: white; color: #007bff; border: none; cursor: pointer;">
+            🢁
+        </button>
+    </div>
+</div>
+
+@code {
+    private string? userInput;
+    private string? response;
+
+    private async Task SendMessage()
+    {
+        if (!string.IsNullOrEmpty(userInput))
+        {
+            var llm = new OllamaLLM(model: "qwen2.5:0.5b");
+            response = await llm.InvokeAsync(input: userInput);
+        }
+    }
+}
